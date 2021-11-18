@@ -47,6 +47,23 @@ while (inicioAnalisis){
          if(lineaActual!="}"){ 
             cout<<"Token:"; 
         }
+ // yo       char lineaTemporal [(k+1)-lineaActual.size()]; 
+        for(h=k+1;h<lineaActual.size();h++){//for que imprime el valor del token (lo que va despues del ":") 
+            cout<<lineaActual[h]; 
+ 
+ 
+        } 
+        cout<<"\n"; 
+        //############################################################################################################// 
+ 
+        if (lineaActual=="}"){ 
+            llavesAbiertas--; 
+        } 
+        if (llavesAbiertas==0){ //detecta la llave final del JSON 
+            inicioAnalisis = false; 
+            cout<<"Token: }, Final del JSON\n"<<endl; 
+        } 
+    }
 
  
     
