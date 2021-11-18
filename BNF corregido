@@ -26,3 +26,10 @@ json> ::= <value>
 
 <boolean> ::= true|false
 
+<null> ::=  null
+
+<objeto> ::=  “ { “ [ <pertenecia> ]  {“ , ” <pertenecia>} * “ } “
+
+<pertenecia> ::= <string>  “:” <value>
+
+<array> ::= <"["[<value>] {","<value>}*"]"
