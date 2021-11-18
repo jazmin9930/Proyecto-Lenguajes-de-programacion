@@ -6,3 +6,12 @@ json> ::= <value>
 
 <cadena> ::= <letra>|<cadena><letra>
 
+<letra> ::= |a|A|b|B|c|C|d|D|e|E|f|F|g|G|h|H|i|I|j|J|k|K|l|L|m|M|n|N|o|O|p|P|q|Q|r|R|s|S|t|T|u|U|v|V|w|W|x|X|y|Y|z|Z
+
+<number> ::= <[int] [<float>] {<exponente>}*>
+
+<int> ::= <entero con digito>|<int><digito><digito>
+
+<float> ::= <digito> "." <digito><digito>
+
+<exponente> ::= <indicador de exponente><entero con signo><digito>
