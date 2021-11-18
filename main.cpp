@@ -15,6 +15,21 @@ int main() {
     while(lineaActual==""){ //instruccion que ignora las lineas en blanco, itera hasta encontrar la linea con la "{" 
         getline(archivo, lineaActual); 
     } 
+ //Any 
+ 
+    primerLinea=lineaActual; 
+ 
+    primerLinea=lineaActual; 
+    if(primerLinea!="{"){ 
+ 
+        cout<<"Json en formato incorrecto, favor de formatear el json en el formato adecuado"<<endl; 
+        cout<<"Pagina recomendada para formatear json: https://jsonformatter.curiousconcept.com/"<<endl; 
+        inicioAnalisis = false; 
+    } else if (lineaActual=="{"){ 
+        cout<<"Token: {, Inicio del JSON\n"<<endl; 
+        llavesAbiertas++; 
+    }
+
  
  
     
