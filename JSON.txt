@@ -1,0 +1,7 @@
+{
+	"username" : "Thomas",
+	"edad" : 36,
+	"accesos" :  [ "admin", "editor", "contributor" ],
+	"adminMode": true,
+	"apellido":"Shelby",
+}
