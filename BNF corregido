@@ -15,3 +15,14 @@ json> ::= <value>
 <float> ::= <digito> "." <digito><digito>
 
 <exponente> ::= <indicador de exponente><entero con signo><digito>
+
+<indicador del exponente> ::= e|E
+
+<entero con signo> ::= <signo><digto>
+
+<signo> ::= +|-
+
+<digito> ::= 0|1|2|3|4|5|6|7|8|9
+
+<boolean> ::= true|false
+
