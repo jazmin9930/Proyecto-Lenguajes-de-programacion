@@ -1,1 +1,8 @@
+json> ::= <value>
+
+<value> ::= <string>| <number> | <objecto> | <array> | <boolean> | <null> 
+
+<string> ::= "<cadena>|<string><cadena>"
+
+<cadena> ::= <letra>|<cadena><letra>
 
