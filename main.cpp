@@ -29,8 +29,25 @@ int main() {
         cout<<"Token: {, Inicio del JSON\n"<<endl; 
         llavesAbiertas++; 
     }
-
+while (inicioAnalisis){ 
  
+ 
+        getline(archivo, lineaActual); 
+        while (lineaActual==""){ 
+            getline(archivo, lineaActual); 
+        } 
+ 
+        //Aqui comienza el analisis de "lineaActual", para determinar los token, valores y tipos 
+        //############################################################################################################// 
+ 
+        int i =0; 
+        int k=0; 
+        int h=0; 
+ 
+         if(lineaActual!="}"){ 
+            cout<<"Token:"; 
+        }
+
  
     
     return 0; 
