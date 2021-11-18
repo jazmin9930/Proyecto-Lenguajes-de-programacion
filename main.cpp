@@ -3,7 +3,7 @@
 #include <fstream> 
 using namespace std; 
  
-//Jazmin 
+
 int main() { 
     string lineaActual, primerLinea; 
     ifstream archivo("JSON.txt"); 
