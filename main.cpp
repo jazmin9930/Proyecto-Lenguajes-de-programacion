@@ -48,12 +48,29 @@ while (inicioAnalisis){
             cout<<"Token:"; 
         }
  // yo       char lineaTemporal [(k+1)-lineaActual.size()]; 
-        for(h=k+1;h<lineaActual.size();h++){//for que imprime el valor del token (lo que va despues del ":") 
-            cout<<lineaActual[h]; 
- 
- 
-        } 
-        cout<<"\n"; 
+       for(int j=0;j<lineaActual.size();j++){
+
+                    cout<<lineaActual[j];
+                    i++;
+                    if(lineaActual[i]==':'){
+                        k=i;
+                        break;
+                    }
+                }
+            
+
+             
+            if(lineaActual!="}"){ 
+            cout<<" Valor:"; 
+        }
+        
+            for(h=k+1;h<lineaActual.size();h++){
+                    cout<<lineaActual[h];
+                }
+                
+                
+            
+            cout<<"\n"; 
         //############################################################################################################// 
  
         if (lineaActual=="}"){ 
